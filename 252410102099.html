@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Tugas Pweb - Profil Kedai Kopi</title>
+    <style>
+        
+        body {
+            background-color: lemonchiffon;
+            margin: 0%;
+            padding: 0%;
+        }
+
+        header {
+            background-color: #5d4037;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 28px;
+            color: cornsilk;
+        }
+
+        header p {
+            margin-top: 8px;
+            color: #d7ccc8;
+        }
+
+        nav {
+            background-color: #5d4037;
+            text-align: center;
+            padding: 12px;
+        }
+
+        nav a {
+            color: cornsilk;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: antiquewhite;
+            text-decoration: underline;
+        }
+        
+        .container {
+            width: 80%;
+            margin: 20px auto;
+        }
+
+        section {
+            background-color: cornsilk;
+            padding: 25px;
+            margin-bottom: 20px;
+            border: 1px solid #d7ccc8;
+            border-radius: 5px;
+        }
+
+        section h2 {
+            color: #5d4037;
+            border-bottom: 2px solid #5d4037;
+            padding-bottom: 8px;
+            margin-top: 0;
+        }
+
+        .about-content {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .about-content img {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #5d4037;
+        }
+
+        /* SKILLS */
+        .skills-list {
+            display: flex;
+            gap: 15px;
+        }
+
+        .skill-card {
+            background-color: #8d6e63;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+
+        .portfolio-grid {
+            display: flex;
+            gap: 15px;
+        }
+
+        .portfolio-item {
+            flex: 1;
+            border: 1px solid #ccc;
+            padding: 15px;
+            background-color: #fafafa;
+            border-radius: 4px;
+        }
+
+        .portfolio-item h3 {
+            margin-top: 0;
+            color: #5d4037;
+        }
+
+        form label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        form input[type="text"],
+        form input[type="email"],
+        form textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        form button {
+            margin-top: 15px;
+            background-color: #3e2723;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        form button:hover {
+            background-color: #5d4037;
+        }
+
+        footer {
+            background-color: #3e2723;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+
+      </style>
+</head>
+<body>
+
+    <header>
+        <h1>Kedai Kopi & Portofolio</h1>
+        <p>Selamat datang di website profil dan racikan menu kopi favorit gabbbb</p>
+    </header>  
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="container">
+
+     <section id="about">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <!-- Ganti foto.jpg dengan nama file foto lokal kamu -->
+                <img src="foto.jpg.jpeg" alt="Foto Profil">
+                <div>
+                    <h3>Ola, saya Gabriela sebagai mahasiswa Fakultas Ilmu Komputer</h3>
+                    <p>Portofolio web sederhana bertema kedai kopi ini dibuat untuk memenuhi tugas Pemrograman Web semester 3. </p>
+                </div>
+        </section>   
+
+    <section id="portofolio"></section>
+            <h2>Portfolio</h2>
+            <div class="Portofolio-grid">
+                <div class="portfolio-item">
+                    <span class="portfolio-tag"> </span>
+                    <h3>Landing Page Promo</h3>
+                    <p>Halaman promosi produk kopi harian dan penawaran diskon khusus mahasiswa.</p>
+                </div>
+                <div class="portfolio-item">
+                    <span class="portfolio-tag"> </span>
+                    <h3>Tabel Menu & Harga</h3>
+                    <p>Daftar lengkap racikan kopi, non-kopi, dan camilan dengan struktur tabel rapi.</p>
+                </div>
+                <div class="portfolio-item">
+                    <span class="portfolio-tag"> </span>
+                    <h3>Form Reservasi Meja</h3>
+                    <p>Sistem formulir online untuk pemesanan tempat duduk dan area co-working space.</p>
+                </div>
+            </div>
+        </section>
+
+    <section id="contact">
+            <h2>Contact Us</h2>
+            <form action="#" method="POST">
+                <label for="nama">Nama Lengkap:</label>
+                <input type="text" id="nama" name="nama" placeholder="Masukkan nama..." required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Masukkan email..." required>
+
+                <label for="pesan">Pesan / Saran:</label>
+                <textarea id="pesan" name="pesan" rows="4" placeholder="Tuliskan pesan kamu..."></textarea>
+
+                <button type="submit">Kirim Pesan</button>
+            </form>
+        </section>
+     </div>
+
+     <footer>
+        <p>&copy; 2026 Tugas Pemrograman Web | Dibuat untuk Praktikum Pweb</p>
+    </footer>
+
+</body>
+</html>
+
